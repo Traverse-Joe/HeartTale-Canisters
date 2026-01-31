@@ -1,4 +1,8 @@
 {
+  "TranslationProperties": {
+    "Name": "server.items.Mini_Red_Heart.name",
+    "Description": "server.items.Mini_Red_Heart.description"
+  },
   "Model": "Resources/Ingredients/red_heart.blockymodel",
   "Texture": "Resources/Ingredients/red_heart_canister.png",
   "Icon": "Icons/ItemsGenerated/Mini_Red_Heart.png",
@@ -16,5 +20,48 @@
   },
   "Scale": 2.5,
   "UsePlayerAnimations": true,
-  "PlayerAnimationsId": "Item"
+  "PlayerAnimationsId": "Item",
+  "Consumable": true,
+  "InteractionVars": {
+    "Consume_Charge": {
+      "Interactions": [
+        {
+          "Parent": "Consume_Charge_Heart",
+          "Effects": {
+            "Particles": [
+              {
+                "SystemId": "Food_Eat",
+                "Color": "#AE5C40",
+                "TargetNodeName": "Mouth",
+                "TargetEntityPart": "Entity"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Potion_Health_Instant_Lesser"
+        },
+        "HealthRegen_TierCheck_T1"
+      ]
+    }
+  },
+  "Utility": {
+    "Compatible": true
+  },
+  "DropOnDeath": true,
+  "Interactions": {
+    "Secondary": {
+      "Parent": "Root_Secondary_Consume_Food_T3"
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Hearts"
+    ]
+  }
 }

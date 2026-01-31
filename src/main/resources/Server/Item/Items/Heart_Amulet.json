@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Utility_Heart_Amulet.name"
+    "Name": "server.items.Utility_Heart_Amulet.name",
+    "Description": "server.items.Utility_Heart_Amulet.description"
   },
   "Categories": [
     "Items.Tools"
@@ -11,18 +12,27 @@
   "Recipe": {
     "Input": [
       {
-        "ItemId": "Ingredient_Bar_Iron",
-        "Quantity": 2
+        "ItemId": "Ingredient_Leather_Medium",
+        "Quantity": 8
       },
       {
         "ItemId": "Ingredient_Fibre",
-        "Quantity": 4
+        "Quantity": 2
+      },
+      {
+        "ItemId": "Mini_Red_Heart",
+        "ItemTag": "",
+        "ResourceTypeId": ""
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Workbench"
+        "Id": "Workbench",
+        "Categories": [
+          "Workbench_Tinkering"
+        ],
+        "RequiredTierLevel": 2
       }
     ]
   },
@@ -48,7 +58,7 @@
   "MaxStack": 1,
   "Utility": {
     "Usable": true,
-    "Compatible": true
+    "Compatible": false
   },
   "UsePlayerAnimations": false,
   "ClipsGeometry": true,

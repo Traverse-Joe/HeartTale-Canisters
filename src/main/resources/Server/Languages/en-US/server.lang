@@ -1,1 +1,5 @@
-items.Example_Block.name=Example Block
+items.Mini_Red_Heart.name=Miniature Red Heart
+items.Mini_Red_Heart.description=<color is="#4ade80">[TMP] Miniature Red Hearts Drop from Zombies and Skeletons.</color>
+items.Utility_Heart_Amulet.name=Heart Amulet
+items.Utility_Heart_Amulet.description=<color is="#4ade80">Socket Heart Containers and Equip in the Utility Slot </color>
+items.Red_Heart_Canister.name=Red Heart Canister

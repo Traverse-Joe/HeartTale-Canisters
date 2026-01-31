@@ -1,4 +1,7 @@
 {
+  "TranslationProperties": {
+    "Name": "server.items.Red_Heart_Canister.name"
+  },
   "Model": "Resources/Ingredients/red_heart_canister.blockymodel",
   "Texture": "Resources/Ingredients/red_heart_canister.png",
   "Scale": 2.5,
@@ -13,6 +16,34 @@
     "Translation": [
       0,
       -4
+    ]
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 4
+      },
+      {
+        "ItemId": "Ingredient_Bone_Fragment",
+        "Quantity": 4
+      },
+      {
+        "ItemId": "Plant_Fruit_Apple"
+      },
+      {
+        "ItemId": "Mini_Red_Heart"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Workbench",
+        "Categories": [
+          "Workbench_Tinkering"
+        ],
+        "RequiredTierLevel": 2
+      }
     ]
   },
   "Tags": {
